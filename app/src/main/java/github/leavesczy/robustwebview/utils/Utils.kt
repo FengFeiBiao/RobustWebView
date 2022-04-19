@@ -8,13 +8,12 @@ import android.widget.Toast
 import java.lang.reflect.Method
 
 /**
- * @Author: leavesCZY
- * @Date: 2021/9/20 0:11
- * @Desc:
- * @Github：https://github.com/leavesCZY
+ * @Author : FFB
+ * @Date : 2022/4/19
+ * @Description :
  */
 fun log(log: Any?) {
-    Log.e("FFB-->" + Thread.currentThread().name, log.toString())
+    Log.d("FFB-->" + Thread.currentThread().name, log.toString())
 }
 
 fun showToast(msg: String) {

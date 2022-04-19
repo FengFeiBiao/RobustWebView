@@ -11,10 +11,9 @@ import github.leavesczy.robustwebview.utils.log
 import github.leavesczy.robustwebview.utils.showToast
 
 /**
- * @Author: leavesCZY
- * @Date: 2021/9/20 23:47
- * @Desc:
- * @Github：https://github.com/leavesCZY
+ * @Author : FFB
+ * @Date : 2022/4/19
+ * @Description :
  */
 object WebViewInitTask {
 

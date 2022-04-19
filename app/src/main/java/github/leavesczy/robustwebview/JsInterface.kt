@@ -5,10 +5,9 @@ import github.leavesczy.robustwebview.utils.log
 import github.leavesczy.robustwebview.utils.showToast
 
 /**
- * @Author: leavesCZY
- * @Date: 2021/9/21 15:08
- * @Desc:
- * @Github：https://github.com/leavesCZY
+ * @Author : FFB
+ * @Date : 2022/4/19
+ * @Description :
  */
 class JsInterface {
 

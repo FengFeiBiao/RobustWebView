@@ -21,9 +21,6 @@
         android:theme="@style/Theme.RobustWebView"
         android:usesCleartextTraffic="true">
 
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" />
 
         <activity
             android:name=".WebViewActivity"

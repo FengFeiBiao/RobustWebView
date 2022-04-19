@@ -3,10 +3,9 @@ package github.leavesczy.robustwebview.utils
 import android.app.Application
 
 /**
- * @Author: leavesCZY
- * @Date: 2021/10/1 23:16
- * @Desc:
- * @Github：https://github.com/leavesCZY
+ * @Author : FFB
+ * @Date : 2022/4/19
+ * @Description :
  */
 object ContextHolder {
 

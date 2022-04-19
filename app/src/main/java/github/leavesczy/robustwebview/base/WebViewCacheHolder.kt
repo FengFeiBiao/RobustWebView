@@ -11,10 +11,9 @@ import github.leavesczy.robustwebview.utils.log
 import java.util.*
 
 /**
- * @Author: leavesCZY
- * @Date: 2021/10/4 18:57
- * @Desc:
- * @公众号：字节数组
+ * @Author : FFB
+ * @Date : 2022/4/19
+ * @Description :
  */
 object WebViewCacheHolder {
 
