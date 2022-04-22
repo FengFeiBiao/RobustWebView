@@ -79,15 +79,12 @@ object WebViewInterceptRequestProxy {
         }
 
         val extension = getExtensionFromUrl(url.toString())
-        if (url.scheme == "https" || url.scheme == "http") {
-            if (extension == "ico" || extension == "bmp" || extension == "gif"
-                || extension == "jpeg" || extension == "jpg" || extension == "png"
-                || extension == "svg" || extension == "webp" || extension == "css"
-                || extension == "js" || extension == "json" || extension == "eot"
-                || extension == "otf" || extension == "ttf" || extension == "woff"
-            ) {
-                return true
-            }
+        if ((url.scheme == "https" || url.scheme == "http") && (extension == "ico" || extension == "bmp" || extension == "gif"
+                    || extension == "jpeg" || extension == "jpg" || extension == "png"
+                    || extension == "svg" || extension == "webp" || extension == "css"
+                    || extension == "js" || extension == "json" || extension == "eot"
+                    || extension == "otf" || extension == "ttf" || extension == "woff")) {
+            return true
         }
         return false
     }

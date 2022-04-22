@@ -4,9 +4,7 @@ import android.app.Application
 import android.content.Context
 import android.content.MutableContextWrapper
 import android.os.Looper
-import android.util.Log
 import android.view.ViewGroup
-import android.webkit.WebView
 import github.leavesczy.robustwebview.utils.log
 import java.util.*
 

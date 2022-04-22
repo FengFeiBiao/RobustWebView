@@ -19,19 +19,9 @@ import java.io.File
  * @Description :
  */
 interface WebViewListener {
-
-    fun onProgressChanged(webView: RobustWebView, progress: Int) {
-
-    }
-
-    fun onReceivedTitle(webView: RobustWebView, title: String) {
-
-    }
-
-    fun onPageFinished(webView: RobustWebView, url: String) {
-
-    }
-
+    fun onProgressChanged(webView: RobustWebView, progress: Int)
+    fun onReceivedTitle(webView: RobustWebView, title: String)
+    fun onPageFinished(webView: RobustWebView, url: String)
 }
 
 class RobustWebView(context: Context, attributeSet: AttributeSet? = null) :

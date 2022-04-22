@@ -1,10 +1,8 @@
 package github.leavesczy.robustwebview
 
 import android.os.Bundle
-import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import github.leavesczy.robustwebview.base.RobustWebView
 import github.leavesczy.robustwebview.base.WebViewCacheHolder
@@ -22,9 +20,7 @@ class WebViewActivity : AppCompatActivity() {
     private lateinit var binding: ActivityWebViewBinding
 
     private val url1 = "https://juejin.cn/user/1767670429521837"
-
-    private val url2 = "https://www.bilibili.com/"
-
+    private val url2 = "https://www1.pcauto.com.cn/auto-c/front-end-projects/app-h5/index.html#/gold-coin-task-rule";//"https://www.bilibili.com/"
     private val url3 = " http://soft.imtt.qq.com/browser/tes/feedback.html"
 
     private lateinit var webView: RobustWebView
@@ -39,7 +35,7 @@ class WebViewActivity : AppCompatActivity() {
         }
 
         override fun onPageFinished(webView: RobustWebView, url: String) {
-
+            //url加载结束
         }
     }
 
