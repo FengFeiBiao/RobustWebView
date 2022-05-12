@@ -26,7 +26,7 @@ object WebViewInitTask {
 
     private lateinit var application: Application
     private val mmkv = MMKV.defaultMMKV()
-    private const val TBS_INIT_KEY = "init_key"
+    private const val X5_INIT_KEY = "init_key"
 
     private var isInit = false  //内核初始化是否成功
     private var time = 0        //内核下载重试次数
@@ -63,7 +63,7 @@ object WebViewInitTask {
                 if (!isInit && TbsDownloader.needDownload(context, false) && !TbsDownloader.isDownloading()) {
                     resetQbSdk()
                 }
-                mmkv.encode(TBS_INIT_KEY, isInit)
+                mmkv.encode(X5_INIT_KEY, isInit)
             }
 
             override fun onCoreInitFinished() {
@@ -76,7 +76,7 @@ object WebViewInitTask {
 
     fun resetQbSdk(): Boolean {
         log("是否可以加载X5内核=" + QbSdk.canLoadX5(application))
-        if (mmkv.decodeBool(TBS_INIT_KEY, false) && QbSdk.canLoadX5(application)) {
+        if (mmkv.decodeBool(X5_INIT_KEY, false) && QbSdk.canLoadX5(application)) {
             log("是否已经加载下载过X5内核且可用=" + QbSdk.canLoadX5(application))
             return isInit
         }
